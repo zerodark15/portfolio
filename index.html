@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Joshua Levi Berbegal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Joshua Levi Berbegal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Joshua Levi Berbegal profile pictire"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Joshua Levi Berbegal</h1>
+        <p class="section__text__p2">IT Technical Support & Help Desk</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        
+        <div id="socials-container">
+
+          <a href="https://www.jobstreet.com.ph/profile/joshualevi-berbegal-J8c2MN2jkT" target="_blank">
+            <img
+              src="./assets/jobstreet.png"
+              alt="My Jobstreet profile"
+              class="icon"
+            />
+          </a>
+          <a href="http://linkedIn.com/in/joshua-levi-berbegal-50404b298/" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------ABOUT--------------- -->
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers"></div>
+          <div class="text-container">
+            <p>
+              I'm a dedicated IT Technical Support and Help Desk 
+              professional with an ardor for solving tech challenges. 
+              With a commitment to delivering seamless solutions and enhancing user experiences, 
+              I thrive on making technology work for you. 
+              I'm here to simplify the complex and ensure your IT journey is as 
+              smooth as possible. Let's navigate the digital landscape together.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('work experience')">
+                Work Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Software</span><br />Installation, Configuration, and Troubleshooting, including industry-specific applications.</li>
+                <li><span>Hardware</span><br />Desktops, laptops, servers, printers, scanners</li>
+                <li>
+                  <span>Server</span><br />Windows Server, Virtual Machine, VMware Installation and Configuration
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="work experience">
+              <ul>
+                <li>
+                  <span>2020 - Present</span><br />IT Technical Assistant at
+                  University of San Agustin
+                </li>
+                <li>
+                  <span>2019 - 2020</span><br />Operations System Support Staff
+                  at University of San Agustin
+                </li>
+                <li>
+                  <span>2018 - 2019</span><br />On-the-Job Trainee (OJT) at
+                  University of San Agustin
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016 - 2019</span><br />BS Information Technology at
+                  University of San Agustin
+                </li>
+                <li>
+                  <span>2013 - 2016</span><br />BS Mechanical Engineering (Undergrad) at
+                  University of San Agustin
+                </li>
+                <li>
+                  <span>2009 - 2013</span><br />Secondary at Centerphil
+                  Montessori Learning Center, Inc.
+                </li>
+                <li>
+                  <span>2003 - 2009</span><br />Primary at Cabatuan Central
+                  Elementary School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-- ----------------------------------------EXPERIENCE----------------------------------- -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">IT Support & Help Desk Level 1 - 2</h2>
+            <div class="article-container">  
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Workspace for Education</h3>
+                  <!-- <p>Intermidiate</p> -->
+                </div>
+              </article>       
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hardware & Software</h3>
+                  <!-- <p>Intermidiate</p> -->
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Window Server Configuration</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Network Management</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Remote Support</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Customer Service</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              IT Support & Help Desk Level 1 - 2
+            </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MS Office</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Windows OS</h3>
+                  <!-- <p>Beginner</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML, CSS </h3>
+                  <!-- <p>Intermidiate</p> -->
+                </div>
+              </article>
+             
+          </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VMware</h3>
+                  <!-- <p>Intermidiate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mac OS</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe PS</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkicon.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Technical Support</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#gallery'"
+      />
+    </section>
+
+    <!-- ------------------GALLERY--------------------- -->
+    <section class="gallery" id="gallery">
+        <p class="section__text__p1">Browse My Gallery</p>
+        <h1 class="title">Gallery</h1>
+        <!-- --------------------------------------------------------------------------------- -->
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <img
+              src="./assets/gallery1.png"
+              alt="project 1"
+              class="project-img"
+            />
+            <div class="gallery-layer">
+              <h4>Hardware and Software Setup</h4>
+              <p>
+                Prepare the hardware and 
+                software for deployment to the end user.
+              </p>
+              <!-- <a href="#"><i class="bx bx-link-external"></i></a> -->
+            </div>
+          </div>
+          <div class="gallery-box">
+            <img
+              src="./assets/gallery2.png"
+              alt="project 2"
+              class="project-img"
+            />
+            <div class="gallery-layer">
+              <h4>MAC OS</h4>
+              <p>
+                Set up a newly purchased iMac for end-user deployment.
+              </p>
+              <!-- <a href="gallery.html" target="_blank"><i class="bx bx-link-external"></i></a> -->
+            </div>
+          </div>
+          <div class="gallery-box">
+            <img
+              src="./assets/gallery6.png "
+              alt="project 3"
+              class="project-img"
+            />
+            <div class="gallery-layer">
+              <h4>Servers</h4>
+              <p>
+                Diligently conducted thorough checks and 
+                inspections to ensure the system's stability and integrity.
+              </p>
+              <!-- <a href="#"><i class="bx bx-link-external"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+        <div class="btn-container2">
+          <button
+            class="btn2 btn-color-2"
+            onclick="window.open('gallery.html')"
+          >
+            Gallery
+          </button>
+          </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-info-container-left">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="sub-title">Contact Me</h1>
+  
+          <p>
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            /><a href="mailto:joshualeviberbegal@gmail.com"
+              >joshualeviberbegal@gmail.com</a
+            >
+          </p>
+  
+          <p>
+            <img
+              src="./assets/telephone.png"
+              alt="Telephone icon"
+              class="icon contact-icon telephone-icon"
+            /><a> 09260838057</a>
+          </p>
+          <div id="socials-container">
+            <a href="https://www.jobstreet.com.ph/profile/joshualevi-berbegal-J8c2MN2jkT" target="_blank">
+              <img
+                src="./assets/jobstreet.png"
+                alt="My jobstreet profile"
+                class="icon"
+              />
+            </a>
+            <a href="http://linkedIn.com/in/joshua-levi-berbegal-50404b298/" target="_blank">
+              <img
+                src="./assets/linkedin.png"
+                alt="My linkedin profile"
+                class="icon"
+              />
+            </a>
+            <a href="http://github.com/" target="_blank">
+              <img
+                src="./assets/github.png"
+                alt="My github profile"
+                class="icon"
+              />
+            </a>
+          </div>
+        </div>
+  
+        <div class="contact-info-container-right">
+          <form name="contact-form">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="text" name="Email" placeholder="Your Email" required />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <div class="btn-container3">
+            <button type="submit" class="btn btn-color-2 contact-btn">
+              Submit
+            </button>
+            </div>
+            <span id="msg"></span>
+          </form>
+        </div>
+      </section>
+  
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Joshua Levi Berbegal. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
+  
